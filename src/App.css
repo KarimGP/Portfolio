@@ -73,9 +73,11 @@ body {
 
 /* Secciones de contenido que pasan debajo del marco rojo */
 .section {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 20px;
   padding-left: 80px; /* Desplaza el texto de las secciones hacia adentro */
-  padding-top: 40px;
+  padding-right: 60px;
+  padding-top: 70px;
   position: relative;
   z-index: 1; /* Asegura que el contenido pase debajo del borde rojo */
   box-sizing: border-box; /* Para que el padding no altere el tamaño */
@@ -84,7 +86,7 @@ body {
 }
 
 .section h1 {
-  padding-top: 30px;
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
   font-weight: 700; /* Use a specific weight like 700 for bold */
   font-size: 3rem; /* Adjust the size as needed */
@@ -224,4 +226,153 @@ html {
   100% {
     stroke: rgba(255, 0, 255, 0.6);
   }
+}
+
+#contact {
+  background-color: #fbfbfb; /* Keep the white background */
+}
+
+/* Apply Montserrat font globally */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Projects section */
+#projects {
+  background-color: #fdfdfd; /* Background color */
+}
+
+.projects-section {
+  padding: 40px;
+  background-color: #ffffff;
+  
+}
+
+/* Wrapper for the card and the description */
+.project-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Align image and text horizontally */
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Project card styling */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30vw; /* Width is 30% of viewport width */
+  max-width: 480px; /* Maximum width for larger screens */
+  aspect-ratio: 3 / 2; /* Maintain a 3:2 aspect ratio (proportional) */
+  margin-right: 40px;
+  margin-top: 40px;
+  position: relative; /* Necessary for positioning icons inside the card */
+  transition: transform 0.3s ease, width 0.3s ease; /* Smooth width scaling */
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  transform: perspective(1000px) rotateY(10deg);
+}
+
+/* Project image styling */
+.project-image {
+  width: 100%;
+  height: 65%; /* Ensure height scales with the card */
+  object-fit: cover;
+}
+
+/* Project link icons */
+.project-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1; /* Ensure icons are visible */
+}
+
+.project-link {
+  font-size: 1.3rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: gray; /* Change color on hover */
+}
+
+/* Project description (title and text) */
+.project-description {
+  max-width: 600px;
+}
+
+.project-description h2 {
+  margin: 0 0 10px 0;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #000000;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-description p {
+  font-size: 0.89rem;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design: Keep the aspect ratio but reduce size on small screens */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 20px;
+    max-width: calc(100% - 40px); /* Adjust padding for smaller screens */
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-card {
+    width: 100%; /* Take full width of the container */
+    max-width: 100%; /* Ensure it doesn't exceed the width of the viewport */
+    margin-right: 0;
+    margin-bottom: 20px;
+    aspect-ratio: 3 / 2; /* Maintain aspect ratio */
+  }
+
+  .project-image {
+    height: auto; /* Ensure image scales with card width */
+  }
+}
+
+/* Power BI link icon */
+.data-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.data-link {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.data-link img {
+  width: 50px; /* Adjust icon size */
+  height: 25px;
+}
+
+.data-link:hover img {
+  filter: brightness(1.2); /* Slight hover effect */
 }
