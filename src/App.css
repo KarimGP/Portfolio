@@ -1,0 +1,227 @@
+/* Global font settings */
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400; /* Regular weight */
+}
+
+/* Marco rojo semitransparente */
+.red-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 40px solid rgba(255, 255, 255, 0.8); /* Borde rojo semitransparente */
+  box-sizing: border-box;
+  pointer-events: none; /* Permite la interacción con el contenido debajo */
+  z-index: 10; /* Asegura que esté siempre encima del contenido */
+}
+
+/* Borde negro alrededor del contenido */
+.black-border {
+  position: fixed;
+  top: 40px; /* Ajusta el borde negro dentro del marco rojo */
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid black; /* Borde negro */
+  box-sizing: border-box;
+  overflow-y: scroll; /* Habilitar scroll interno */
+  scrollbar-width: none; /* Firefox: Ocultar barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  z-index: 1000; /* Asegura que el contenido pase debajo del borde rojo */
+}
+
+/* Ocultar la barra de desplazamiento en Webkit (Chrome, Safari, Opera) */
+.black-border::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Navbar siempre visible */
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  z-index: 100; /* Asegura que el navbar esté por encima del borde */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+  left: 40px;
+  font-family: 'Roboto Mono', monospace; /* Roboto Mono applied */
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+/* Secciones de contenido que pasan debajo del marco rojo */
+.section {
+  height: 100vh;
+  padding-left: 80px; /* Desplaza el texto de las secciones hacia adentro */
+  padding-top: 40px;
+  position: relative;
+  z-index: 1; /* Asegura que el contenido pase debajo del borde rojo */
+  box-sizing: border-box; /* Para que el padding no altere el tamaño */
+  font-family: 'Montserrat', sans-serif; /* Change the font to Montserrat */
+  font-weight: 300;
+}
+
+.section h1 {
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
+  font-weight: 700; /* Use a specific weight like 700 for bold */
+  font-size: 3rem; /* Adjust the size as needed */
+  margin: 0;
+}
+
+.section h2 {
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
+  font-weight: 400; /* Use a specific weight like 700 for bold */
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin: 0;
+}
+
+.section h3 {
+  position: absolute;  /* Positioning relative to the parent .section */
+  bottom: 55px;        /* Position it 20px from the bottom */
+  right: 80px;         /* Position it 20px from the right */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;    /* Make it lighter */
+  font-size: 0.89rem;
+  color: #000000;
+  max-width: 300px;     /* Set the maximum width to 200px */
+  word-wrap: break-word; /* Ensures long words are wrapped within the max-width */
+  text-align: justify;
+  line-height: 1.5;  
+}
+/* Estilos de copyright en la esquina inferior derecha, fijo */
+.copyright {
+  font-family: 'Roboto Mono', monospace; /* Ensure Roboto Mono is applied */
+  font-weight: 400; /* Lighter weight for a modern look */
+  font-size: 13.5px;
+  position: fixed; /* Fijo en la esquina inferior derecha */
+  right: 40px;
+  bottom: 10px;
+  color: black;
+  z-index: 1000; /* Asegura que esté visible sobre el contenido */
+}
+
+#home {
+  background-color: #ffffff;
+}
+
+#projects {
+  background-color: #ffffff;
+}
+
+#data {
+  background-color: #ffffff;
+}
+
+#contact {
+  background-color: #ffffff;
+}
+
+/* Iconos de redes sociales */
+.icon-container {
+  position: fixed;
+  right: 10px; /* Position outside the right border */
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.icon {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.icon:hover {
+  color: gray;
+}
+
+.icon i.fa-github:hover {
+  color: #333;
+}
+
+/* Scroll suave en toda la página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home section */
+#home {
+  position: relative;
+  height: 100vh;
+  background-color: #ffffff; /* Keep the white background */
+  overflow: hidden;
+}
+
+/* SVG container for the mesh */
+.svg-mesh {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Line animations for the SVG paths */
+.path {
+  fill: none;
+  stroke-width: 2;
+  stroke: rgba(0, 0, 0, 0.6); /* Change color as needed */
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 8s ease-in-out forwards;
+}
+
+/* Animation for line growth */
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Color changing animation */
+@keyframes colorChange {
+  0% {
+    stroke: rgba(255, 0, 0, 0.6);
+  }
+  25% {
+    stroke: rgba(0, 255, 0, 0.6);
+  }
+  50% {
+    stroke: rgba(0, 0, 255, 0.6);
+  }
+  75% {
+    stroke: rgba(255, 255, 0, 0.6);
+  }
+  100% {
+    stroke: rgba(255, 0, 255, 0.6);
+  }
+}
