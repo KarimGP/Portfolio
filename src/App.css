@@ -29,7 +29,8 @@ body {
   overflow-y: scroll; /* Habilitar scroll interno */
   scrollbar-width: none; /* Firefox: Ocultar barra de desplazamiento */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
-  z-index: 1000; /* Asegura que el contenido pase debajo del borde rojo */
+  z-index: 10; /* Asegura que el borde esté visible */
+  pointer-events: none; /* Permite la interacción con los elementos debajo */
 }
 
 /* Ocultar la barra de desplazamiento en Webkit (Chrome, Safari, Opera) */
@@ -239,7 +240,7 @@ body {
 
 /* Projects section */
 #projects {
-  background-color: #fdfdfd; /* Background color */
+  background-color: #ffffff; /* Background color */
 }
 
 .projects-section {
@@ -248,29 +249,45 @@ body {
   
 }
 
+.project-container {
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Fondo claro para la tarjeta completa */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  pointer-events: none;
+
+}
 /* Wrapper for the card and the description */
 .project-wrapper {
   display: flex;
   justify-content: flex-start; /* Align image and text horizontally */
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   flex-wrap: wrap;
+  pointer-events: none;
+
 }
 
 /* Project card styling */
 .project-card {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: visible;
   width: 30vw; /* Width is 30% of viewport width */
   max-width: 480px; /* Maximum width for larger screens */
   aspect-ratio: 3 / 2; /* Maintain a 3:2 aspect ratio (proportional) */
   margin-right: 40px;
-  margin-top: 40px;
+  margin-top: 0px;
   position: relative; /* Necessary for positioning icons inside the card */
   transition: transform 0.3s ease, width 0.3s ease; /* Smooth width scaling */
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .project-card:hover {
@@ -282,6 +299,7 @@ body {
   width: 100%;
   height: 65%; /* Ensure height scales with the card */
   object-fit: cover;
+  pointer-events: none;
 }
 
 /* Project link icons */
@@ -289,10 +307,11 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  position: absolute;
+  position: absolute; /* Keep this to position at bottom-right */
   bottom: 15px;
   right: 15px;
-  z-index: 1; /* Ensure icons are visible */
+  pointer-events: auto; /* Ensure it's clickable */
+  z-index: 10; /* Set a high z-index to ensure it's above other elements */
 }
 
 .project-link {
@@ -300,6 +319,8 @@ body {
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
+  pointer-events: auto; /* Asegura que los enlaces respondan a los clics */
+  z-index: 10; /* Set a high z-index to ensure it's above other elements */
 }
 
 .project-link:hover {
@@ -309,11 +330,14 @@ body {
 /* Project description (title and text) */
 .project-description {
   max-width: 600px;
+  flex-grow: 1; /* Esto hace que la descripción ocupe todo el espacio disponible a la derecha */
+  margin-top: 0; /* Eliminar el margen superior para alinear con la tarjeta */
+  pointer-events: none;
 }
 
 .project-description h2 {
-  margin: 0 0 10px 0;
-  margin-top: 25px;
+  margin: 0 0 5px 0;
+  margin-top: 0px;
   font-size: 1.5rem;
   color: #000000;
   display: inline-block;
@@ -326,11 +350,49 @@ body {
   margin-bottom: 15px;
 }
 
-/* Responsive Design: Keep the aspect ratio but reduce size on small screens */
+.data-container {
+  margin-top: 20px;
+  background-color: #f1efe7; /* Fondo claro para la tarjeta completa */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+/* Ajuste del diseño en pantallas pequeñas */
 @media (max-width: 768px) {
   .projects-section {
     padding: 20px;
-    max-width: calc(100% - 40px); /* Adjust padding for smaller screens */
+    max-width: calc(100% - 40px); /* Ajustar padding para pantallas pequeñas */
+  }
+
+  .project-container {
+    flex-direction: column; /* Apila el contenido verticalmente */
+    align-items: center; /* Centra el contenido */
+  }
+
+  .data-container {
+    flex-direction: column; /* Apila el contenido verticalmente */
+    align-items: center; /* Centra el contenido */
+  }
+  .project-card {
+    width: 80%; /* La tarjeta toma el ancho completo del contenedor */
+    max-width: 360px; /* Ancho máximo para no exceder el viewport */
+    margin-right: 0px;
+    margin-left: 40px; /* Añade un margen izquierdo */
+    margin-bottom: 10px;
+    aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */
+    min-height: 200px; /* Establecer una altura mínima para que no sea demasiado pequeña */
+    z-index: 5; /* Set lower than .project-links */
+    pointer-events: auto; /* Allow pointer events on the project card */
+  }
+
+  .project-description {
+    max-width: 100%; /* La descripción toma todo el ancho disponible */
+    margin-top: 5px; /* Añadir margen superior para separar de la tarjeta */
   }
 
   .project-wrapper {
@@ -338,41 +400,8 @@ body {
     align-items: flex-start;
   }
 
-  .project-card {
-    width: 100%; /* Take full width of the container */
-    max-width: 100%; /* Ensure it doesn't exceed the width of the viewport */
-    margin-right: 0;
-    margin-bottom: 20px;
-    aspect-ratio: 3 / 2; /* Maintain aspect ratio */
-  }
-
   .project-image {
-    height: auto; /* Ensure image scales with card width */
+    height: auto; /* Asegura que la imagen escale bien con la tarjeta */
   }
-}
 
-/* Power BI link icon */
-.data-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-
-.data-link {
-  font-size: 1.5rem;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.data-link img {
-  width: 50px; /* Adjust icon size */
-  height: 25px;
-}
-
-.data-link:hover img {
-  filter: brightness(1.2); /* Slight hover effect */
 }
