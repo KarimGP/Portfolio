@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column; /* Organizar en una columna */
   gap: 10px;
-  position: absolute; /* Coloca las pestañas de idioma en el margen derecho */
+  position: fixed; /* Coloca las pestañas de idioma en el margen derecho */
   right: -2px; /* Ajusta esta distancia según tu diseño */
   top: 30px; /* Ajusta esta distancia según tu diseño */
   z-index: 100; /* Asegura que estén por encima del contenido */
@@ -147,7 +147,7 @@ body {
 .copyright {
   font-family: 'Roboto Mono', monospace; /* Ensure Roboto Mono is applied */
   font-weight: 400; /* Lighter weight for a modern look */
-  font-size: 13.5px;
+  font-size: 13px;
   position: fixed; /* Fijo en la esquina inferior derecha */
   right: 40px;
   bottom: 10px;

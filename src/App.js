@@ -201,7 +201,7 @@ function App() {
       
       {/* Texto de copyright */}
       <div className="copyright">
-          &copy; 2024 Made by Karim G.P.
+          &copy; 2024 website developed by Karim G.P.
       </div>
 
       {/* Iconos de redes sociales */}
