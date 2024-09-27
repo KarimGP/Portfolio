@@ -1,0 +1,35 @@
+{
+    "home": {
+      "title": "Karim Ghazal Pando",
+      "subtitle": "Diving into big data and web development",
+      "description": "With a quite extensive experience in the construction sector, I have decided in recent years to diversify my professional profile by venturing into the field of web development, data analytics and machine learning exploring the use of different tools and libraries. My goal is to apply these knowledge both in architecture and other dynamic sectors, in order to contribute with more efficient solutions and staying updated into the digital transformation."
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Some personal projects with the main objective to explore and continue learning about web development and new tools",
+      "findPointTitle": "FindPoint",
+        "findPointDescription": "Designed and developed by me, the application allows users to discover points of interest based on the city they are in, using recommendations shared by others. With an intuitive, location-focused interface, the app suggests prominent places, whether for tourists or locals looking to explore. Additionally, by registering, users unlock extra features such as adding new points of interest and rating existing ones, fostering a collaborative community that enriches local experiences and promotes the exchange of valuable information. The application has been entirely developed in Python, a language traditionally used for backend development. However, with technologies like Flask, we can adapt almost the entire frontend using pure Python. The goal was simply to create an application with good functionality and appearance. Although using Python for the frontend can cause some performance issues, for small applications that require few resources, it can be a good option due to the ease of development that Python offers.",
+        "normasTitle": "Normas little AI",
+        "normasDescription": "A project focused on assisting the research of regulations through the application of artificial intelligence. It aims to facilitate the management and interpretation of regulations in the construction sector, providing an efficient and practical experience",
+        "bpfTitle": "Project BPF under construction",
+        "bpfDescription": "This application has also been designed and is being developed by me. It is a tool created to assist with homework. We will have to wait a bit until it's finished to fully discover what it's all about. The application is being developed using the MERN stack. The main language is JavaScript, both in the frontend and backend. Since the application needs to store relational data as well as other types of data that do not fit a strict relational model, MongoDB, a NoSQL database, was chosen.",
+        "worldHappinessTitle": "World Happiness Index",
+        "worldHappinessDescription": "The world happiness index is measured through different parameters that, added together, give a score to each country. To create this dashboard, the data has been collected and cleaned, the most relevant variables have been analyzed to subsequently create the graphs based on them, and finally an interactive world ball has been developed that very well visualizes the levels of each country and region. The objective of this work is not to contrast the veracity of the origin of the data, but rather the transformation, interpretation and representation of these.",
+        "worldPlasticTitle": "World plastic production/pollution",
+        "worldPlasticDescription": "This study has been done with the objective to understand how much plastic is produced annually, accumulates and how its disposal is managed through recycling or incineration. The management of the most industrialized regions or countries that make greater use of plastic has been mainly taken into account. The objective of this work is not to contrast the veracity of the origin of the data, but rather the transformation, interpretation and representation of these.",
+        "primeTitle": "Prime video data",
+        "primeDescription": "This data set from Amazon Prime Video consists of listings of all movies and television shows available on the platform, along with details such as directors, cast, release year, rating, among others. Also, for example, determine if Amazon Prime has focused more on television shows than movies in recent years. The objective of this work is not to contrast the veracity of the origin of the data, but rather the transformation, interpretation and representation of these.",
+        "polynomialRegressionTitle": "Polynomial Regression",
+        "polynomialRegressionDescription": "This case focuses on polynomial regression. The libraries numpy for numerical calculations and matrix operations, matplotlib.pyplot for creating graphs and visualizing data, and pandas for data manipulation and analysis have been imported. In this case study on the relationship between position and salary, polynomial regression captures the non-linear relationship between the variables, unlike linear regression, which deviates from many points and does not allow for accurate prediction of a salary based on position.",
+        "hierarchicalClusteringTitle": "Hierarchical Clustering",
+        "hierarchicalClusteringDescription": "This case focuses on hierarchical clustering analysis, where we aim to divide different person profiles into homogeneous groups based on their data in order to target efforts according to their purchase potential. Given that resources in advertising, etc. are limited, we aim to be more efficient when investing time/money in potential customers. In this case, the scikit-learn library was also used to obtain the clustering."
+    },
+    "data": {
+      "title": "Data",
+      "subtitle": "Some examples of exercises and little projects about data analytics and data science that I have been doing in different courses."
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  }
+  

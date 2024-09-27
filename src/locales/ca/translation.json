@@ -1,0 +1,35 @@
+{
+    "home": {
+      "title": "Karim Ghazal Pando",
+      "subtitle": "Explorant el big data i el desenvolupament web",
+      "description": "Amb una àmplia experiència en el sector de la construcció, he decidit en els darrers anys diversificar el meu perfil professional aventurant-me en el camp del desenvolupament web, l'anàlisi de dades i el machine learning, explorant l'ús de diferents eines i biblioteques. El meu objectiu és aplicar aquests coneixements tant en arquitectura com en altres sectors dinàmics, per tal de contribuir amb solucions més eficients i mantenir-me actualitzat en la transformació digital."
+    },
+    "projects": {
+      "title": "Projectes",
+      "subtitle": "Alguns projectes personals amb l'objectiu principal d'explorar i continuar aprenent sobre desenvolupament web i noves eines.",
+      "findPointTitle": "FindPoint",
+      "findPointDescription": "Dissenyada i desenvolupada per mi, l'aplicació permet als usuaris descobrir punts d'interès en funció de la ciutat en la qual es troben, utilitzant recomanacions compartides per altres usuaris. Amb una interfície intuïtiva i centrada en la ubicació, l'aplicació suggereix llocs destacats, ja sigui per a turistes o per a locals que busquin explorar. A més, registrant-se, els usuaris desbloquegen funcions addicionals com afegir nous punts d'interès i valorar els existents, fomentant una comunitat col·laborativa que enriqueix les experiències locals i promou l'intercanvi d'informació valuosa. L'aplicació ha estat desenvolupada íntegrament en Python, un llenguatge tradicionalment utilitzat per al desenvolupament backend. No obstant això, amb tecnologies com Flask, podem adaptar gairebé tot el frontend utilitzant Python pur. L'objectiu era simplement crear una aplicació amb bona funcionalitat i aparença. Tot i que utilitzar Python per al frontend pot causar alguns problemes de rendiment, per a aplicacions petites que requereixen pocs recursos, pot ser una bona opció a causa de la facilitat de desenvolupament que ofereix Python.",
+      "normasTitle": "Normes Little AI",
+      "normasDescription": "Un projecte que se centra a ajudar a la recerca de normes mitjançant l'aplicació d'intel·ligència artificial. Té com a objectiu facilitar la gestió i interpretació de regulacions en el sector de la construcció, oferint una experiència eficient i pràctica.",
+      "bpfTitle": "Projecte BPF en construcció",
+      "bpfDescription": "Aquest projecte està sent dissenyat i desenvolupat per mi. És una eina creada per ajudar amb les tasques escolars, gestionant la informació i proporcionant una plataforma amigable per a la realització de treballs. Actualment està en fase de desenvolupament usant la pila MERN (MongoDB, Express, React i Node). Com que l'aplicació necessita emmagatzemar tant dades relacionals com no relacionals, s'ha optat per MongoDB, que permet una estructura més flexible i escalable.",
+      "worldHappinessTitle": "Índex Mundial de Felicitat",
+      "worldHappinessDescription": "L'Índex Mundial de Felicitat es mesura a través de diferents paràmetres que, sumats, donen una puntuació a cada país. Aquest projecte recull, neteja i transforma les dades per crear gràfics representatius de cada regió, facilitant la seva comprensió i visualització mitjançant un globus interactiu. L'objectiu d'aquest treball no és qüestionar la veracitat de les dades d'origen, sinó interpretar i representar visualment la informació d'una manera comprensible i educativa.",
+      "worldPlasticTitle": "Producció i contaminació mundial de plàstic",
+      "worldPlasticDescription": "Aquest estudi analitza la quantitat de plàstic produït anualment i com es gestiona la seva eliminació a nivell global. S'estudien regions industrialitzades per entendre la gestió del reciclatge i la incineració de residus plàstics. L'objectiu és conscienciar sobre la producció de plàstic i proposar solucions sostenibles per a la gestió de residus.",
+      "primeTitle": "Dades de Prime Video",
+      "primeDescription": "Aquest conjunt de dades d'Amazon Prime Video inclou una llista detallada de totes les pel·lícules i sèries disponibles a la plataforma, amb informació sobre directors, repartiment, any de llançament, classificació i altres detalls. Es pot analitzar l'evolució dels continguts al llarg dels anys per identificar tendències, com l'augment de la producció de sèries enfront de pel·lícules en els últims temps.",
+      "polynomialRegressionTitle": "Regressió Polinòmica",
+      "polynomialRegressionDescription": "Aquest estudi es centra en la regressió polinòmica per analitzar la relació entre posició i salari en un entorn laboral. A diferència de la regressió lineal, la regressió polinòmica pot capturar relacions no lineals, proporcionant millors prediccions. L'objectiu d'aquest projecte és explorar l'ús de la regressió polinòmica per comprendre millor les dinàmiques salarials en funció de diferents factors.",
+      "hierarchicalClusteringTitle": "Clustering Jeràrquic",
+      "hierarchicalClusteringDescription": "Aquest anàlisi es basa en el clustering jeràrquic per agrupar perfils de persones en grups homogenis en funció de les seves dades. Es busca millorar l'eficiència en l'assignació de recursos a potencials clients mitjançant la identificació de grups de gran valor. La llibreria scikit-learn es va utilitzar per realitzar el clustering, obtenint una visualització clara dels grups resultants i les seves característiques."
+    },
+    "data": {
+      "title": "Dades",
+      "subtitle": "Alguns exemples d'exercicis i petits projectes sobre análisis i ciència de dades que he anat realitzant en diferents cursos."
+    },
+    "contact": {
+      "title": "Contacte"
+    }
+  }
+  

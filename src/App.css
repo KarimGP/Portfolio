@@ -4,6 +4,34 @@ body {
   font-weight: 400; /* Regular weight */
 }
 
+.language-selector-vertical {
+  display: flex;
+  flex-direction: column; /* Organizar en una columna */
+  gap: 10px;
+  position: absolute; /* Coloca las pestañas de idioma en el margen derecho */
+  right: -2px; /* Ajusta esta distancia según tu diseño */
+  top: 30px; /* Ajusta esta distancia según tu diseño */
+  z-index: 100; /* Asegura que estén por encima del contenido */
+}
+
+.language-selector-vertical a {
+  text-decoration: none;
+  color: black; /* Color de texto similar a las pestañas de navegación */
+  font-family: 'Roboto Mono', monospace; /* Aplicar la misma fuente */
+  font-weight: 400;
+  padding: 5px 15px; /* Añadir padding para ajustar la apariencia */
+  letter-spacing: 0.05em;
+  cursor: pointer; /* Añadir puntero de mano al pasar el ratón */
+}
+
+.language-selector-vertical a:hover {
+  color: gray; /* Efecto hover igual al de las pestañas de navegación */
+}
+
+.language-selector-vertical .active {
+  font-weight: bold; /* Resalta la pestaña activa */
+}
+
 /* Marco rojo semitransparente */
 .red-border {
   position: fixed;
@@ -11,7 +39,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 40px solid rgba(255, 255, 255, 0.8); /* Borde rojo semitransparente */
+  border: 40px solid rgba(255, 255, 255, 0.9); /* Borde rojo semitransparente */
   box-sizing: border-box;
   pointer-events: none; /* Permite la interacción con el contenido debajo */
   z-index: 10; /* Asegura que esté siempre encima del contenido */
@@ -98,7 +126,7 @@ body {
   padding-top: 10px;
   font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
   font-weight: 400; /* Use a specific weight like 700 for bold */
-  font-size: 1.5rem; /* Adjust the size as needed */
+  font-size: 1.3rem; /* Adjust the size as needed */
   margin: 0;
 }
 
@@ -296,10 +324,13 @@ body {
 
 /* Project image styling */
 .project-image {
-  width: 100%;
-  height: 65%; /* Ensure height scales with the card */
-  object-fit: cover;
-  pointer-events: none;
+  width: 95%; /* Image takes full width of the card */
+  height: auto; /* Automatically adjusts height based on width */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  margin: 10px; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  display: block; /* Ensures no extra space around the image */
+  vertical-align: top; /* Align image at the top */
 }
 
 /* Project link icons */
@@ -401,7 +432,14 @@ body {
   }
 
   .project-image {
-    height: auto; /* Asegura que la imagen escale bien con la tarjeta */
+    width: 100%; /* Image takes full width of the card */
+    height: auto; /* Automatically adjusts height based on width */
+    max-height: 160px;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    display: block; /* Ensures no extra space around the image */
+    vertical-align: top; /* Align image at the top */
   }
 
 }

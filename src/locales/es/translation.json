@@ -1,0 +1,35 @@
+{
+    "home": {
+      "title": "Karim Ghazal Pando",
+      "subtitle": "Explorando el big data y el desarrollo web",
+      "description": "Con una amplia experiencia en el sector de la construcción, he decidido en los últimos años diversificar mi perfil profesional aventurándome en el campo del desarrollo web, el análisis de datos y el machine learning, explorando el uso de diferentes herramientas y bibliotecas. Mi objetivo es aplicar estos conocimientos tanto en arquitectura como en otros sectores dinámicos, con el fin de contribuir con soluciones más eficientes y mantenerme actualizado en la transformación digital."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Algunos proyectos personales con el principal objetivo de explorar y seguir aprendiendo sobre desarrollo web y nuevas herramientas.",
+      "findPointTitle": "FindPoint",
+      "findPointDescription": "Diseñada y desarrollada por mí, la aplicación permite a los usuarios descubrir puntos de interés en función de la ciudad en la que se encuentren, utilizando recomendaciones compartidas por otros. Con una interfaz intuitiva y centrada en la ubicación, la aplicación sugiere lugares destacados, ya sea para turistas o para locales que buscan explorar. Además, al registrarse, los usuarios desbloquean funciones adicionales como añadir nuevos puntos de interés y calificar los existentes, fomentando una comunidad colaborativa que enriquece las experiencias locales y promueve el intercambio de información valiosa. La aplicación ha sido desarrollada íntegramente en Python, un lenguaje tradicionalmente utilizado para el desarrollo backend. Sin embargo, con tecnologías como Flask, podemos adaptar casi todo el frontend utilizando Python puro. El objetivo era simplemente crear una aplicación con buena funcionalidad y apariencia. Aunque usar Python para el frontend puede causar algunos problemas de rendimiento, para aplicaciones pequeñas que requieren pocos recursos, puede ser una buena opción debido a la facilidad de desarrollo que ofrece Python.",
+      "normasTitle": "Normas little AI",
+      "normasDescription": "Un proyecto centrado en ayudar en la búsqueda de normas mediante la aplicación de inteligencia artificial. Su objetivo es facilitar la gestión e interpretación de regulaciones en el sector de la construcción, ofreciendo una experiencia eficiente y práctica",
+      "bpfTitle": "Proyecto BPF en construcción",
+      "bpfDescription": "Este proyecto está siendo diseñado y desarrollado por mí. Se trata de una herramienta creada para ayudar con tareas escolares, gestionando la información y proporcionando una plataforma amigable para la realización de trabajos. Actualmente está en fase de desarrollo usando la pila MERN (MongoDB, Express, React y Node). Como la aplicación necesita almacenar tanto datos relacionales como no relacionales, se ha optado por MongoDB, que permite una estructura más flexible y escalable.",
+      "worldHappinessTitle": "Índice Mundial de Felicidad",
+      "worldHappinessDescription": "El Índice Mundial de Felicidad se mide a través de diferentes parámetros que, sumados, otorgan una puntuación a cada país. Este proyecto recoge, limpia y transforma los datos para crear gráficos representativos de cada región, facilitando su comprensión y visualización mediante un globo interactivo. El objetivo de este trabajo no es cuestionar la veracidad de los datos de origen, sino interpretar y representar visualmente la información de una forma comprensible y educativa.",
+      "worldPlasticTitle": "Producción y contaminación mundial de plástico",
+      "worldPlasticDescription": "Este estudio analiza cuánto plástico se produce anualmente y cómo se gestiona su eliminación a nivel global. Se estudian regiones industrializadas para entender su manejo del reciclaje e incineración de residuos plásticos. El propósito es concienciar sobre la producción de plástico y proponer soluciones sostenibles para la gestión de residuos.",
+      "primeTitle": "Datos de Prime Video",
+      "primeDescription": "Este conjunto de datos de Amazon Prime Video incluye una lista detallada de todas las películas y series disponibles en la plataforma, con información sobre directores, reparto, año de lanzamiento, clasificación, entre otros detalles. Se analiza la evolución de los contenidos a lo largo de los años para identificar tendencias, como el aumento en la producción de series frente a películas en los últimos tiempos.",
+      "polynomialRegressionTitle": "Regresión Polinomial",
+      "polynomialRegressionDescription": "Este estudio se centra en la regresión polinomial para analizar la relación entre posición y salario en un entorno laboral. A diferencia de la regresión lineal, la regresión polinomial puede capturar relaciones no lineales, proporcionando mejores predicciones. El objetivo de este proyecto es explorar el uso de la regresión polinomial para comprender mejor las dinámicas salariales en función de distintos factores.",
+      "hierarchicalClusteringTitle": "Clustering Jerárquico",
+      "hierarchicalClusteringDescription": "Este análisis se basa en el clustering jerárquico para agrupar perfiles de personas en grupos homogéneos en función de sus datos. Se busca mejorar la eficiencia en la asignación de recursos a potenciales clientes mediante la identificación de grupos de alto valor. La librería scikit-learn se utilizó para realizar el clustering, obteniendo una visualización clara de los grupos resultantes y sus características."
+    },
+    "data": {
+      "title": "Datos",
+      "subtitle": "Algunos ejemplos de ejercicios y pequeños proyectos sobre análisis y ciencia de datos que he estado realizando en diferentes cursos."
+    },
+    "contact": {
+      "title": "Contacto"
+    }
+  }
+  

@@ -1,12 +1,29 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { useTranslation } from 'react-i18next'; 
+import i18n from './i18n'; 
+import fpImage from './img/fp.png';
+import bpfImage from './img/bpf.png';
+import whapImage from './img/whap.png';
+import wplasticImage from './img/wplastic.png';
+import primeImage from './img/prime.png';
+import polyregImage from './img/polyreg.png';
+import hierclustImage from './img/hierclust.png';
 
 function App() {
+  const [language, setLanguage] = useState('en');
+  const { t } = useTranslation();
+
   const handleSmoothScroll = (e, id) => {
     e.preventDefault();
     const section = document.querySelector(id);
     section.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); // Change the language
+    setLanguage(language); // Actualizar el estado de language
   };
 
   return (
@@ -20,19 +37,26 @@ function App() {
         </ul>
       </nav>
 
+      <div className="language-selector-vertical">
+        <a href="#!" onClick={() => changeLanguage('en')} className={language === 'en' ? 'active' : ''}>EN</a>
+        <a href="#!" onClick={() => changeLanguage('ca')} className={language === 'ca' ? 'active' : ''}>CA</a>
+        <a href="#!" onClick={() => changeLanguage('es')} className={language === 'es' ? 'active' : ''}>ES</a>
+      </div>
+
       {/* Secciones envueltas en el borde negro */}
       <div className="black-border"></div>
       <div id="home" className="section">
-        <h1>Karim Ghazal Pando</h1>
-        <h2>Diving into big data and web development</h2> 
-        <h3>With a quite extensive experience in the construction sector, I have decided in recent years to diversify my professional profile by venturing into the field of web development, data analytics and machine learning exploring the use of different tools and libraries. My goal is to apply these cutting-edge knowledge both in architecture and other dynamic sectors, in order to contribute with innovative solutions and staying updated into the digital transformation.</h3> 
+        <h1>{t('home.title')}</h1>
+        <h2>{t('home.subtitle')}</h2>
+        <h3>{t('home.description')}</h3>
       </div>
       <div id="projects" className="section">
-        <h1>Projects</h1>
+        <h1>{t('projects.title')}</h1>
+        <h2>{t('projects.subtitle')}</h2>
         <div className="project-container">
           <div className="project-wrapper">
           <div className="project-card">
-            <img src="project1.jpg" alt="Project 1" className="project-image" />
+            <img src={fpImage} alt="Project 1" className="project-image" />
             <div className="project-links">
               <a href="https://p01-findpoint.onrender.com" target="_blank" rel="noopener noreferrer" className="project-link">
                 <i className="fas fa-globe"></i>  {/* Icon */}
@@ -44,8 +68,8 @@ function App() {
           </div>
           </div>  
           <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
+            <h2>{t('projects.findPointTitle')}</h2>
+            <p>{t('projects.findPointDescription')}</p>
           </div>
         </div>
         <div className="project-container">
@@ -63,36 +87,37 @@ function App() {
             </div>
           </div>  
           <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
+          <h2>{t('projects.normasTitle')}</h2>
+          <p>{t('projects.normasDescription')}</p>
           </div>
         </div>
         <div className="project-container">
           <div className="project-wrapper">
             <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" className="project-image" />
+              <img src={bpfImage} alt="Project 1" className="project-image" />
               <div className="project-links">
-                <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://github.com/KarimGP" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
                 </a>
-                <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://github.com/KarimGP" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
             </div>
           </div>  
           <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
+            <h2>{t('projects.bpfTitle')}</h2>
+            <p>{t('projects.bpfDescription')}</p>
           </div>
         </div>
       </div>
       <div id="data" className="section">
-        <h1>Data</h1>
+        <h1>{t('data.title')}</h1>
+        <h2>{t('data.subtitle')}</h2>
         <div className="data-container">
           <div className="project-wrapper">
             <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" className="project-image" />
+              <img src={whapImage} alt="Project 1" className="project-image" />
               <div className="project-links">
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiNmFiMTE5ODYtMmEzMi00MmIyLWExNTUtZTU3ZDdhNzAwMjQ1IiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
@@ -101,30 +126,14 @@ function App() {
             </div>
           </div>  
           <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
+            <h2>{t('projects.worldHappinessTitle')}</h2>
+            <p>{t('projects.worldHappinessDescription')}</p>
           </div>
         </div>
         <div className="data-container">
           <div className="project-wrapper">
             <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" className="project-image" />
-              <div className="project-links">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiN2FlMjFmYTMtNTUwNC00OGI5LThlMTgtZTRkZmNjZGRmM2VkIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
-                </a>
-              </div>
-            </div>
-          </div>  
-          <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
-          </div>
-        </div>
-        <div className="data-container">
-          <div className="project-wrapper">
-            <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" className="project-image" />
+              <img src={wplasticImage} alt="Project 1" className="project-image" />
               <div className="project-links">
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiOWMyZjM5OTctNzAxNi00ZmZjLWJhY2ItYTY1YjFlODRmZGIzIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
@@ -133,8 +142,56 @@ function App() {
             </div>
           </div>  
           <div className="project-description">
-            <h2>Project Title 1</h2>
-            <p>A brief description of the project goes here.</p>
+            <h2>{t('projects.worldPlasticTitle')}</h2>
+            <p>{t('projects.worldPlasticDescription')}</p>
+          </div>
+        </div>
+        <div className="data-container">
+          <div className="project-wrapper">
+            <div className="project-card">
+              <img src={primeImage} alt="Project 1" className="project-image" />
+              <div className="project-links">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiN2FlMjFmYTMtNTUwNC00OGI5LThlMTgtZTRkZmNjZGRmM2VkIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div className="project-description">
+            <h2>{t('projects.primeTitle')}</h2>
+            <p>{t('projects.primeDescription')}</p>
+          </div>
+        </div>
+        <div className="data-container">
+          <div className="project-wrapper">
+            <div className="project-card">
+              <img src={polyregImage} alt="Project 1" className="project-image" />
+              <div className="project-links">
+                <a href={`${process.env.PUBLIC_URL}/resources/polynomial_regression.html`} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div className="project-description">
+            <h2>{t('projects.polynomialRegressionTitle')}</h2>
+            <p>{t('projects.polynomialRegressionDescription')}</p>
+          </div>
+        </div>
+        <div className="data-container">
+          <div className="project-wrapper">
+            <div className="project-card">
+              <img src={hierclustImage} alt="Project 1" className="project-image" />
+              <div className="project-links">
+                <a href={`${process.env.PUBLIC_URL}/resources/hierarchical_clustering.html`} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div className="project-description">
+            <h2>{t('projects.hierarchicalClusteringTitle')}</h2>
+            <p>{t('projects.hierarchicalClusteringDescription')}</p>
           </div>
         </div>
       </div>
