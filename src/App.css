@@ -368,15 +368,23 @@ body {
 /* Ajuste del diseño en pantallas pequeñas */
 @media (max-width: 768px) {
 
+  .section h2 {
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
+    font-weight: 400; /* Use a specific weight like 700 for bold */
+    font-size: 1.1rem; /* Adjust the size as needed */
+    margin: 0;
+  }
+
   .section h3 {
     position: absolute;  /* Positioning relative to the parent .section */
-    top: 340px;
+    top: 345px;
     bottom: 55px;        /* Position it 20px from the bottom */
     right: 45px; 
     left: 100px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;    /* Make it lighter */
-    font-size: 0.89rem;
+    font-size: 0.8rem;
     color: #000000;
     max-width: 300px;     /* Set the maximum width to 200px */
     word-wrap: break-word; /* Ensures long words are wrapped within the max-width */
@@ -422,7 +430,7 @@ body {
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 290px; /* Ancho máximo para no exceder el viewport */
-    margin-right: 30px;
+    margin-right: 33px;
     margin-left: 40px; /* Añade un margen izquierdo */
     right: 5px;
     margin-bottom: 10px;
@@ -435,6 +443,21 @@ body {
   .project-description {
     max-width: 100%; /* La descripción toma todo el ancho disponible */
     margin-top: 5px; /* Añadir margen superior para separar de la tarjeta */
+  }
+
+  .project-description h2 {
+    margin: 0 0 5px 0;
+    margin-top: 0px;
+    font-size: 1.1rem;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .project-description p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin-bottom: 15px;
   }
 
   .project-wrapper {
