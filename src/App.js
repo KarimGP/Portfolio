@@ -10,6 +10,7 @@ import wplasticImage from './img/wplastic.png';
 import primeImage from './img/prime.png';
 import polyregImage from './img/polyreg.png';
 import hierclustImage from './img/hierclust.png';
+import normiaImage from './img/normia.png';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -75,12 +76,12 @@ function App() {
         <div className="project-container">
           <div className="project-wrapper">
             <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" className="project-image" />
+              <img src={normiaImage} alt="Project 1" className="project-image" />
               <div className="project-links">
-                <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://normia.onrender.com/" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
                 </a>
-                <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://github.com/KarimGP/Normia" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
