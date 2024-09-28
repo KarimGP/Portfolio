@@ -382,7 +382,7 @@ body {
   }
 
   .navbar ul {
-    gap: 5px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
+    gap: 3px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
   }
 
   .projects-section {
@@ -402,7 +402,7 @@ body {
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 320px; /* Ancho máximo para no exceder el viewport */
-    margin-right: 0px;
+    margin-right: 10px;
     margin-left: 40px; /* Añade un margen izquierdo */
     margin-bottom: 10px;
     aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */

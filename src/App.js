@@ -14,7 +14,7 @@ import hierclustImage from './img/hierclust.png';
 function App() {
   const [language, setLanguage] = useState('en');
   const { t } = useTranslation();
-
+  
   const handleSmoothScroll = (e, id) => {
     e.preventDefault();
     const section = document.querySelector(id);
