@@ -370,7 +370,7 @@ body {
 
   .section h3 {
     position: absolute;  /* Positioning relative to the parent .section */
-    top: 500px;
+    top: 300px;
     bottom: 55px;        /* Position it 20px from the bottom */
     right: 45px; 
     left: 100px;
@@ -402,7 +402,7 @@ body {
     left: 40px;
     font-family: 'Roboto Mono', monospace; /* Roboto Mono applied */
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.025em;
   }
 
   .projects-section {
@@ -421,7 +421,7 @@ body {
   }
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
-    max-width: 310px; /* Ancho máximo para no exceder el viewport */
+    max-width: 290px; /* Ancho máximo para no exceder el viewport */
     margin-right: 20px;
     margin-left: 40px; /* Añade un margen izquierdo */
     margin-bottom: 10px;
