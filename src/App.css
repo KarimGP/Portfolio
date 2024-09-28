@@ -370,7 +370,8 @@ body {
   .section h3 {
     position: absolute;  /* Positioning relative to the parent .section */
     bottom: 55px;        /* Position it 20px from the bottom */
-    right: 60px;         /* Position it 20px from the right */
+    right: 45px; 
+    left: 100px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;    /* Make it lighter */
     font-size: 0.89rem;
@@ -382,7 +383,7 @@ body {
   }
 
   .navbar ul {
-    gap: 3px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
+    gap: 1px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
   }
 
   .projects-section {
@@ -401,7 +402,7 @@ body {
   }
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
-    max-width: 320px; /* Ancho máximo para no exceder el viewport */
+    max-width: 310px; /* Ancho máximo para no exceder el viewport */
     margin-right: 10px;
     margin-left: 40px; /* Añade un margen izquierdo */
     margin-bottom: 10px;
