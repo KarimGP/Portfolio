@@ -80,6 +80,7 @@ body {
   padding: 0;
   display: flex;
   gap: 10px;
+  transition: gap 0.3s ease
 }
 
 .navbar li {
@@ -228,35 +229,6 @@ html {
   animation: drawLine 8s ease-in-out forwards;
 }
 
-/* Animation for line growth */
-@keyframes drawLine {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* Color changing animation */
-@keyframes colorChange {
-  0% {
-    stroke: rgba(255, 0, 0, 0.6);
-  }
-  25% {
-    stroke: rgba(0, 255, 0, 0.6);
-  }
-  50% {
-    stroke: rgba(0, 0, 255, 0.6);
-  }
-  75% {
-    stroke: rgba(255, 255, 0, 0.6);
-  }
-  100% {
-    stroke: rgba(255, 0, 255, 0.6);
-  }
-}
-
 #contact {
   background-color: #fbfbfb; /* Keep the white background */
 }
@@ -395,9 +367,27 @@ body {
 }
 /* Ajuste del diseño en pantallas pequeñas */
 @media (max-width: 768px) {
+  .section h3 {
+    position: absolute;  /* Positioning relative to the parent .section */
+    bottom: 55px;        /* Position it 20px from the bottom */
+    right: 60px;         /* Position it 20px from the right */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;    /* Make it lighter */
+    font-size: 0.89rem;
+    color: #000000;
+    max-width: 300px;     /* Set the maximum width to 200px */
+    word-wrap: break-word; /* Ensures long words are wrapped within the max-width */
+    text-align: justify;
+    line-height: 1.5;  
+  }
+
+  .navbar ul {
+    gap: 5px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
+  }
+
   .projects-section {
     padding: 20px;
-    max-width: calc(100% - 40px); /* Ajustar padding para pantallas pequeñas */
+    max-width: calc(100% - 30px); /* Ajustar padding para pantallas pequeñas */
   }
 
   .project-container {
@@ -411,7 +401,7 @@ body {
   }
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
-    max-width: 360px; /* Ancho máximo para no exceder el viewport */
+    max-width: 320px; /* Ancho máximo para no exceder el viewport */
     margin-right: 0px;
     margin-left: 40px; /* Añade un margen izquierdo */
     margin-bottom: 10px;
