@@ -367,8 +367,10 @@ body {
 }
 /* Ajuste del diseño en pantallas pequeñas */
 @media (max-width: 768px) {
+
   .section h3 {
     position: absolute;  /* Positioning relative to the parent .section */
+    top: 500px;
     bottom: 55px;        /* Position it 20px from the bottom */
     right: 45px; 
     left: 100px;
@@ -382,8 +384,25 @@ body {
     line-height: 1.5;  
   }
 
+  .navbar {
+    position: fixed;
+    top: 10px;
+    left: 35px;
+    z-index: 100; /* Asegura que el navbar esté por encima del borde */
+  }
+
   .navbar ul {
     gap: 1px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+    left: 40px;
+    font-family: 'Roboto Mono', monospace; /* Roboto Mono applied */
+    font-weight: 400;
+    letter-spacing: 0.05em;
   }
 
   .projects-section {
@@ -403,7 +422,7 @@ body {
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 310px; /* Ancho máximo para no exceder el viewport */
-    margin-right: 10px;
+    margin-right: 20px;
     margin-left: 40px; /* Añade un margen izquierdo */
     margin-bottom: 10px;
     aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */
