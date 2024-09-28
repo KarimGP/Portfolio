@@ -377,11 +377,11 @@ body {
   }
 
   .section h3 {
-    position: absolute;  /* Positioning relative to the parent .section */
+    align-self: center;
+    text-align: center;
     top: 345px;
     bottom: 55px;        /* Position it 20px from the bottom */
-    right: 45px; 
-    left: 100px;
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;    /* Make it lighter */
     font-size: 0.8rem;
@@ -430,8 +430,8 @@ body {
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 290px; /* Ancho máximo para no exceder el viewport */
-    margin-right: 33px;
-    margin-left: 40px; /* Añade un margen izquierdo */
+    margin-right: 32px;
+    margin-left: 39px; /* Añade un margen izquierdo */
     right: 5px;
     margin-bottom: 10px;
     aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */
