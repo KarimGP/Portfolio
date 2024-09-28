@@ -370,7 +370,7 @@ body {
 
   .section h3 {
     position: absolute;  /* Positioning relative to the parent .section */
-    top: 300px;
+    top: 340px;
     bottom: 55px;        /* Position it 20px from the bottom */
     right: 45px; 
     left: 100px;
@@ -422,8 +422,9 @@ body {
   .project-card {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 290px; /* Ancho máximo para no exceder el viewport */
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: 40px; /* Añade un margen izquierdo */
+    right: 5px;
     margin-bottom: 10px;
     aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */
     min-height: 200px; /* Establecer una altura mínima para que no sea demasiado pequeña */
