@@ -82,7 +82,7 @@ function App() {
             <div className="project-card">
               <img src={normiaImage} alt="Project 1" className="project-image" />
               <div className="project-links">
-                <a href="https://normia.onrender.com/" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://normia.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
                 </a>
                 <a href="https://github.com/KarimGP/Normia" target="_blank" rel="noopener noreferrer" className="project-link">
