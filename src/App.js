@@ -102,10 +102,10 @@ function App() {
               <img src={bpfImage} alt="Project 1" className="project-image" />
               <div className="project-links">
                 <a href="https://github.com/KarimGP" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <i className="fas fa-globe"></i>  {/* Ícono del globo terráqueo */}
+                  {/*<i className="fas fa-globe"></i> 
                 </a>
                 <a href="https://github.com/KarimGP" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <i className="fab fa-github"></i>
+                  <i className="fab fa-github"></i>*/}
                 </a>
               </div>
             </div>
