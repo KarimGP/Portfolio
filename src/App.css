@@ -230,7 +230,14 @@ html {
 }
 
 #contact {
-  background-color: #fbfbfb; /* Keep the white background */
+  background-color: #fbfbfb; /* Mantener el fondo blanco */
+  min-height: 80px; /* Establecer una altura mínima */
+  display: block; /* Asegurar que se muestre como bloque */
+  overflow: visible; /* Permitir que todo el contenido se muestre */
+  margin-bottom: 30px;
+  padding-top: 10px;
+  align-items: center;     /* Centra horizontalmente */
+  text-align: center;      /* Centra el texto dentro del contenedor */
 }
 
 /* Apply Montserrat font globally */
@@ -251,7 +258,7 @@ body {
 
 .project-container {
   margin-top: 20px;
-  background-color: #f9f9f9; /* Fondo claro para la tarjeta completa */
+  background-color: #f5f5f5; /* Fondo claro para la tarjeta completa */
   border-radius: 20px; /* Bordes redondeados */
   margin-bottom: 10px;
   padding: 30px;
@@ -365,8 +372,33 @@ body {
   transition: all 0.3s ease;
   pointer-events: none;
 }
+
+.email-link {
+  color: black; /* Color inicial */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  text-decoration: none; /* Quita el subrayado */
+  font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
+  font-weight: 300; /* Use a specific weight like 700 for bold */
+  font-size: 1.1rem; /* Adjust the size as needed */
+}
+
+.email-link:hover {
+  color: gray; /* Cambia el color a gris cuando se pasa el ratón */
+}
+
 /* Ajuste del diseño en pantallas pequeñas */
 @media (max-width: 768px) {
+
+  .section h1 {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is applied */
+    font-weight: 700; /* Use a specific weight like 700 for bold */
+    font-size: 3rem; /* Adjust the size as needed */
+    margin: 0;
+    margin-left: -15px;
+    align-items: center;     /* Centra horizontalmente */
+    text-align: center;      /* Centra el texto dentro del contenedor */
+  }
 
   .section h2 {
     padding-top: 10px;
@@ -374,6 +406,9 @@ body {
     font-weight: 400; /* Use a specific weight like 700 for bold */
     font-size: 1.1rem; /* Adjust the size as needed */
     margin: 0;
+    margin-left: -15px;
+    align-items: center;     /* Centra horizontalmente */
+    text-align: center;      /* Centra el texto dentro del contenedor */
   }
 
   .section h3 {
@@ -390,6 +425,7 @@ body {
     word-wrap: break-word; /* Ensures long words are wrapped within the max-width */
     text-align: justify;
     line-height: 1.5;  
+    
   }
 
   .navbar {
@@ -431,7 +467,7 @@ body {
     width: 80%; /* La tarjeta toma el ancho completo del contenedor */
     max-width: 280px; /* Ancho máximo para no exceder el viewport */
     margin-right: 32px;
-    margin-left: 38px; /* Añade un margen izquierdo */
+    margin-left: 37px; /* Añade un margen izquierdo */
     right: 5px;
     margin-bottom: 10px;
     aspect-ratio: 16 / 9; /* Relación de aspecto ajustada */
@@ -476,4 +512,10 @@ body {
     vertical-align: top; /* Align image at the top */
   }
 
+  #contact {
+    background-color: #fbfbfb; /* Mantener el fondo blanco */
+    overflow: visible; /* Permitir que todo el contenido se muestre */
+    margin-bottom: 30px;
+    padding-top: 10px;
+  }
 }

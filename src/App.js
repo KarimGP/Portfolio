@@ -27,6 +27,10 @@ function App() {
     setLanguage(language); // Actualizar el estado de language
   };
 
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:karimkgp@gmail.com';
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -197,15 +201,19 @@ function App() {
         </div>
       </div>
       <div id="contact" className="section">
-        <h3> Contact </h3>
+        <h3>  </h3>
+        <p>
+        <span onClick={handleEmailClick} className="email-link">
+          <i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>
+          {t('contact.sendEmail')}
+        </span>
+      </p>
       </div>
       
-      {/* Texto de copyright */}
       <div className="copyright">
           &copy; 2024 website developed by Karim G.P.
       </div>
 
-      {/* Iconos de redes sociales */}
       <div className="icon-container">
         <a href="https://github.com/KarimGP" target="_blank" rel="noopener noreferrer" className="icon">
           <i className="fab fa-github"></i>
@@ -215,7 +223,6 @@ function App() {
         </a>
       </div>
 
-      {/* Marco rojo fijo */}
       <div className="red-border"></div>
     </div>
   );
