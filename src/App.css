@@ -435,7 +435,7 @@ body {
   }
 
   .navbar ul {
-    gap: 4px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
+    gap: 5px; /* Reducir la distancia entre pestañas en pantallas pequeñas */
   }
 
   .navbar a {
