@@ -521,7 +521,7 @@ body {
   .copyright {
     font-family: 'Roboto Mono', monospace; /* Ensure Roboto Mono is applied */
     font-weight: 400; /* Lighter weight for a modern look */
-    font-size: 12.7px;
+    font-size: 12.4px;
     position: fixed; /* Fijo en la esquina inferior derecha */
     right: 40px;
     bottom: 10px;
