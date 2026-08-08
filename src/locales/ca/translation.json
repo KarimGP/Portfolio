@@ -2,7 +2,7 @@
     "home": {
       "title": "Karim Ghazal Pando",
       "subtitle": "Explorant el big data i el desenvolupament web",
-      "description": "Amb una àmplia experiència en el sector de la construcció, he decidit en els darrers anys diversificar el meu perfil professional aventurant-me en el camp del desenvolupament web, l'anàlisi de dades i el machine learning, explorant l'ús de diferents eines i biblioteques. El meu objectiu és aplicar aquests coneixements tant en arquitectura com en altres sectors dinàmics, per tal de contribuir amb solucions més eficients i mantenir-me actualitzat en la transformació digital."
+      "description": "Amb una àmplia experiència en el sector de la construcció, he decidit en els darrers anys diversificar el meu perfil professional aventurant-me en el camp de les ciències de dades, explorant l'ús de diferents recursos de machine learning i tractament de dades. El meu objectiu és aplicar aquests coneixements tant en arquitectura com en altres sectors, per tal de contribuir amb solucions més eficients i mantenir-me actualitzat en la transformació digital."
     },
     "projects": {
       "title": "Projectes",
@@ -22,9 +22,13 @@
       "polynomialRegressionTitle": "Regressió Polinòmica",
       "polynomialRegressionDescription": "Aquest cas se centra en la regressió polinòmica. S'han importat les biblioteques numpy per a càlculs numèrics, matplotlib.pyplot per crear gràfics i visualitzar dades, i pandas per a la manipulació i anàlisi de dades. En aquest cas d'estudi sobre la relació entre posició i salari, la regressió polinòmica captura la relació no lineal entre les variables, a diferència de la regressió lineal, que es desvia de molts punts i no permet una predicció precisa d'un sou en funció de la posició.",
       "hierarchicalClusteringTitle": "Agrupament Jeràrquic",
+<<<<<<< HEAD
       "hierarchicalClusteringDescription": "Aquest cas se centra en l'anàlisi d'agrupament jeràrquic, on pretenem dividir diferents perfils de persones en grups homogenis a partir de les seves dades per tal d'orientar els esforços en funció del seu potencial de compra. Atès que els recursos en publicitat, etc. són limitats, pretenem ser més eficients a l'hora d'invertir temps/diners en clients potencials. En aquest cas, també es va utilitzar la biblioteca scikit-learn per obtenir l'agrupament.",
       "bibliotequesEtlTitle": "Pipeline ETL Biblioteques de Catalunya",
       "bibliotequesEtlDescription": "Pipeline ETL complet que extreu 898 biblioteques de l'API de Transparència Catalunya, les transforma amb Python i Pandas, i les carrega a DuckDB seguint l'arquitectura Bronze/Silver/Gold. Les dades es visualitzen amb Power BI mitjançant un dashboard interactiu amb mapa geogràfic, KPIs per comarca i municipi, i filtres dinàmics. El pipeline s'executa automàticament mitjançant Windows Task Scheduler. Aquest projecte demostra el cicle complet d'enginyeria de dades: extracció d'una API pública, transformació, neteja i modelatge de dades, i visualització final en BI."
+=======
+      "hierarchicalClusteringDescription": "Aquest cas se centra en l'anàlisi d'agrupament jeràrquic, on pretenem dividir diferents perfils de persones en grups homogenis a partir de les seves dades per tal d'orientar els esforços en funció del seu potencial de compra. Atès que els recursos en publicitat, etc. són limitats, pretenem ser més eficients a l'hora d'invertir temps/diners en clients potencials. En aquest cas, també es va utilitzar la biblioteca scikit-learn per obtenir l'agrupament."
+>>>>>>> a473880377cc9becbbbed823c0c46d5029c77283
     },
     "data": {
       "title": "Dades",
