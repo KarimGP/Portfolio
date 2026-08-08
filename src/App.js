@@ -11,6 +11,7 @@ import primeImage from './img/prime.png';
 import polyregImage from './img/polyreg.png';
 import hierclustImage from './img/hierclust.png';
 import normiaImage from './img/normia.png';
+import bibliotequesImage from './img/dashboard_biblioteques_etl.png';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -165,6 +166,22 @@ function App() {
           <div className="project-description">
             <h2>{t('projects.primeTitle')}</h2>
             <p>{t('projects.primeDescription')}</p>
+          </div>
+        </div>
+        <div className="data-container">
+          <div className="project-wrapper">
+            <div className="project-card">
+              <img src={bibliotequesImage} alt="Project 1" className="project-image" />
+              <div className="project-links">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiOGE0YjFkMTUtY2VhNS00M2M2LWJiYjEtMTE5MjI0YzhhY2NlIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div className="project-description">
+            <h2>{t('projects.bibliotequesEtlTitle')}</h2>
+            <p>{t('projects.bibliotequesEtlDescription')}</p>
           </div>
         </div>
         <div className="data-container">
