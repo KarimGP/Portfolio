@@ -190,7 +190,7 @@ function App() {
             <div className="project-card">
               <img src={qualitatAireImage} alt="Project 1" className="project-image" />
               <div className="project-links">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjE4MmVkZTEtNzM4Yy00OGFiLTg5ZjAtZWNhMTEwY2M4NWExIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjE4MmVkZTEtNzM4Yy00OGFiLTg5ZjAtZWNhMTEwY2M4NWExIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9" target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fas fa-globe"></i>
                 </a>
               </div>
