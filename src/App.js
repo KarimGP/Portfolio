@@ -12,6 +12,7 @@ import polyregImage from './img/polyreg.png';
 import hierclustImage from './img/hierclust.png';
 import normiaImage from './img/normia.png';
 import bibliotequesImage from './img/dashboard_biblioteques_etl.png';
+import qualitatAireImage from './img/qualitataire.png';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -182,6 +183,22 @@ function App() {
           <div className="project-description">
             <h2>{t('projects.bibliotequesEtlTitle')}</h2>
             <p>{t('projects.bibliotequesEtlDescription')}</p>
+          </div>
+        </div>
+        <div className="data-container">
+          <div className="project-wrapper">
+            <div className="project-card">
+              <img src={qualitatAireImage} alt="Project 1" className="project-image" />
+              <div className="project-links">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjE4MmVkZTEtNzM4Yy00OGFiLTg5ZjAtZWNhMTEwY2M4NWExIiwidCI6IjE2MDMzYWMxLTJiNWMtNDMzMC1hYjM1LTM3YTY5OGIyZmQ0MSIsImMiOjl9">
+                  <i className="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div className="project-description">
+            <h2>{t('projects.qualitatAireTitle')}</h2>
+            <p>{t('projects.qualitatAireDescription')}</p>
           </div>
         </div>
         <div className="data-container">
