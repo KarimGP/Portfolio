@@ -1,4 +1,10 @@
 {
+    "nav": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "data": "Datos",
+      "contact": "Contacto"
+    },
     "home": {
       "title": "Karim Ghazal Pando",
       "subtitle": "Explorando el big data y el desarrollo web",

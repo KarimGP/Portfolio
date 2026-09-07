@@ -39,18 +39,18 @@ function App() {
   return (
     <div>
       <nav className="navbar">
-        <ul>
-          <li><a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')}>Home</a></li>
-          <li><a href="#projects" onClick={(e) => handleSmoothScroll(e, '#projects')}>Projects</a></li>
-          <li><a href="#data" onClick={(e) => handleSmoothScroll(e, '#data')}>Data</a></li>
-          <li><a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')}>Contact</a></li>
-        </ul>
-      </nav>
+  <ul>
+    <li><a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')}>{t('nav.home')}</a></li>
+    <li><a href="#projects" onClick={(e) => handleSmoothScroll(e, '#projects')}>{t('nav.projects')}</a></li>
+    <li><a href="#data" onClick={(e) => handleSmoothScroll(e, '#data')}>{t('nav.data')}</a></li>
+    <li><a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')}>{t('nav.contact')}</a></li>
+  </ul>
+</nav>
 
       <div className="language-selector-vertical">
-        <a href="#!" onClick={() => changeLanguage('en')} className={language === 'en' ? 'active' : ''}>EN</a>
         <a href="#!" onClick={() => changeLanguage('ca')} className={language === 'ca' ? 'active' : ''}>CA</a>
         <a href="#!" onClick={() => changeLanguage('es')} className={language === 'es' ? 'active' : ''}>ES</a>
+        <a href="#!" onClick={() => changeLanguage('en')} className={language === 'en' ? 'active' : ''}>EN</a>
       </div>
 
       <div className="black-border"></div>

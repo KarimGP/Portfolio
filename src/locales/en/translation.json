@@ -1,4 +1,10 @@
 {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "data": "Data",
+      "contact": "Contact"
+    },
     "home": {
       "title": "Karim Ghazal Pando",
       "subtitle": "Diving into big data and web development",
