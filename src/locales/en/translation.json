@@ -11,7 +11,7 @@
       "description": "With extensive experience in the construction sector, over the past five years I have expanded my professional profile towards data engineering, machine learning and web development, working with tools for data processing, transformation and predictive modelling. My aim is to apply this knowledge both in infrastructure management and in other sectors, contributing to more efficient solutions and a better use of data."
     },
     "projects": {
-      "title": "Projects",
+      "title": "DEV",
       "subtitle": "Web applications developed to explore new tools and the integration of AI services, APIs and databases.",
       "findPointTitle": "FindPoint",
       "findPointDescription": "Designed and developed by me, the application allows users to discover points of interest based on the city they are in, using recommendations shared by others. With an intuitive, location-focused interface, the app suggests prominent places, whether for tourists or locals looking to explore. Additionally, by registering, users unlock extra features such as adding new points of interest and rating existing ones, fostering a collaborative community that enriches local experiences and promotes the exchange of valuable information. The application has been entirely developed in Python, a language traditionally used for backend development. However, with technologies like Flask, we can adapt almost the entire frontend using pure Python. The goal was simply to create an application with good functionality and appearance. Although using Python for the frontend can cause some performance issues, for small applications that require few resources, it can be a good option due to the ease of development that Python offers.",
