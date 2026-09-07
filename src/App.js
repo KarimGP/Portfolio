@@ -16,7 +16,7 @@ import qualitatAireImage from './img/qualitataire.png';
 import infraeduImage from './img/dashboard_infra_educat.png';
 
 function App() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('ca');
   const { t } = useTranslation();
 
   const handleSmoothScroll = (e, id) => {
