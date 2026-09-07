@@ -2,11 +2,11 @@
     "home": {
       "title": "Karim Ghazal Pando",
       "subtitle": "Diving into big data and web development",
-      "description": "With a quite extensive experience in the construction sector, I have decided in recent years to diversify my professional profile by venturing into the field of data science, exploring the use of different machine learning and data processing resources. My goal is to apply these knowledge both in architecture and other sectors, in order to contribute with more efficient solutions and staying updated into the digital transformation."
+      "description": "With extensive experience in the construction sector, over the past five years I have expanded my professional profile towards data engineering, machine learning and web development, working with tools for data processing, transformation and predictive modelling. My aim is to apply this knowledge both in infrastructure management and in other sectors, contributing to more efficient solutions and a better use of data."
     },
     "projects": {
       "title": "Projects",
-      "subtitle": "Some personal projects with the main objective to explore and continue learning about web development and new tools",
+      "subtitle": "Web applications developed to explore new tools and the integration of AI services, APIs and databases.",
       "findPointTitle": "FindPoint",
       "findPointDescription": "Designed and developed by me, the application allows users to discover points of interest based on the city they are in, using recommendations shared by others. With an intuitive, location-focused interface, the app suggests prominent places, whether for tourists or locals looking to explore. Additionally, by registering, users unlock extra features such as adding new points of interest and rating existing ones, fostering a collaborative community that enriches local experiences and promotes the exchange of valuable information. The application has been entirely developed in Python, a language traditionally used for backend development. However, with technologies like Flask, we can adapt almost the entire frontend using pure Python. The goal was simply to create an application with good functionality and appearance. Although using Python for the frontend can cause some performance issues, for small applications that require few resources, it can be a good option due to the ease of development that Python offers.",
       "normasTitle": "normIA",
@@ -32,8 +32,7 @@
     },
     "data": {
       "title": "Data",
-      "subtitle": "Some examples of projects I have worked on to learn data analytics and ML."
-    },
+      "subtitle": "Data and machine learning projects, developed professionally and as self-directed learning around real public sector use cases."    },
     "contact": {
       "sendEmail": "Send an email"
     }

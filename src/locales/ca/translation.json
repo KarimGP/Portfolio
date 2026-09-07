@@ -2,11 +2,11 @@
     "home": {
       "title": "Karim Ghazal Pando",
       "subtitle": "Explorant el big data i el desenvolupament web",
-      "description": "Amb una àmplia experiència en el sector de la construcció, he decidit en els darrers anys diversificar el meu perfil professional aventurant-me en el camp de les ciències de dades, explorant l'ús de diferents recursos de machine learning i tractament de dades. El meu objectiu és aplicar aquests coneixements tant en arquitectura com en altres sectors, per tal de contribuir amb solucions més eficients i mantenir-me actualitzat en la transformació digital."
+      "description": "Amb una àmplia experiència en el sector de la construcció, en els darrers cinc anys he ampliat el meu perfil professional cap a l'enginyeria de dades, el machine learning i el desenvolupament web, treballant amb eines de processament, transformació i modelatge predictiu. El meu objectiu és aplicar aquests coneixements tant en la gestió d'infraestructures com en altres sectors, contribuint a solucions més eficients i a un millor aprofitament de les dades."
     },
     "projects": {
       "title": "Projectes",
-      "subtitle": "Alguns projectes personals amb l'objectiu principal d'explorar i continuar aprenent sobre desenvolupament web i noves eines.",
+      "subtitle": "Aplicacions web desenvolupades per explorar noves eines i la integració de serveis d'IA, APIs i bases de dades.",
       "findPointTitle": "FindPoint",
       "findPointDescription": "Dissenyada i desenvolupada per mi, l'aplicació permet als usuaris descobrir punts d'interès en funció de la ciutat en la qual es troben, utilitzant recomanacions compartides per altres usuaris. Amb una interfície intuïtiva i centrada en la ubicació, l'aplicació suggereix llocs destacats, ja sigui per a turistes o per a locals que busquin explorar. A més, registrant-se, els usuaris desbloquegen funcions addicionals com afegir nous punts d'interès i valorar els existents, fomentant una comunitat col·laborativa que enriqueix les experiències locals i promou l'intercanvi d'informació valuosa. L'aplicació ha estat desenvolupada íntegrament en Python, un llenguatge tradicionalment utilitzat per al desenvolupament backend. No obstant això, amb tecnologies com Flask, podem adaptar gairebé tot el frontend utilitzant Python pur. L'objectiu era simplement crear una aplicació amb bona funcionalitat i aparença. Tot i que utilitzar Python per al frontend pot causar alguns problemes de rendiment, per a aplicacions petites que requereixen pocs recursos, pot ser una bona opció a causa de la facilitat de desenvolupament que ofereix Python.",
       "normasTitle": "normIA",
@@ -32,7 +32,7 @@
     },
     "data": {
       "title": "Dades",
-      "subtitle": "Alguns exemples de projectes que he anat realitzant per l'aprenentage d'anàlisi de dades i ML."
+      "subtitle": "Projectes de dades i machine learning, desenvolupats en l'àmbit professional i com a formació pròpia sobre casos reals de gestió pública."
     },
     "contact": {
       "sendEmail": "Enviar un correu"
